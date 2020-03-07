@@ -1,4 +1,4 @@
-package com.brc.face.view;
+package cn.face.view;
 
 import android.content.Context;
 import android.graphics.Canvas;

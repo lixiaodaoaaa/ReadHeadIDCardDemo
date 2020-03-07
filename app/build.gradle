@@ -4,6 +4,7 @@ apply plugin: 'org.greenrobot.greendao'
 android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
+
     signingConfigs {
         release {
             storeFile file(RELEASE_STORE_FILE)
@@ -30,10 +31,6 @@ android {
     }
 
     productFlavors {
-
-
-        //http://sit.api.iot.brc.com.cn/
-        //http://test.api.iot.brc.com.cn:8081
 
         flavorDev {
             applicationIdSuffix '.dev'

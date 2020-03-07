@@ -1,0 +1,15 @@
+<resources>
+
+
+    <style name="fill_width_with_padding" parent="fill_width_auto">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">@dimen/item_padding_top</item>
+        <item name="android:paddingRight">@dimen/item_padding_bottom</item>
+    </style>
+
+    <style name="fill_width_with_toolbarMargin" parent="fill_width_auto">
+        <item name="android:layout_marginTop">@dimen/common_margin_toolbar</item>
+    </style>
+
+
+</resources>

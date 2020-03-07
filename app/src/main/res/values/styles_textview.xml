@@ -1,0 +1,35 @@
+<resources>
+
+
+    <style name="AppTheme.SelectTextView" parent="fill_width_with_padding">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/page_margin</item>
+        <item name="android:layout_marginTop">@dimen/page_margin</item>
+        <item name="android:background">@drawable/shape_select_text_selector</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/font_sub</item>
+        <item name="android:textSize">@dimen/h1</item>
+    </style>
+
+
+    <style name="AppTheme.LabelTexView" parent="fill_width_auto">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/page_margin</item>
+        <item name="android:textSize">@dimen/h4</item>
+    </style>
+
+    <style name="AppTheme.EditTextView" parent="fill_width_auto">
+        <item name="android:layout_height">90dp</item>
+        <item name="android:gravity">top</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:paddingLeft">@dimen/page_margin</item>
+        <item name="android:paddingTop">@dimen/page_margin</item>
+        <item name="android:textColor">@color/font_title</item>
+        <item name="android:textColorHint">@color/font_sub</item>
+        <item name="android:textSize">@dimen/h4</item>
+    </style>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/fill_both_with_white"
+              android:id="@+id/layout_input_bg_et"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_gravity="center"
+              android:background="@drawable/bg_input_password"
+              android:descendantFocusability="afterDescendants"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:layout_marginLeft="15dp"
+>
+
+
+    <EditText
+        android:id="@+id/et_input"
+        style="@style/fill_width_auto"
+        android:layout_gravity="center"
+        android:freezesText="true"
+        android:padding="20dp"
+        android:textColor="@color/font_white"
+        android:textColorHint="@color/font_hint"
+        android:textSize="@dimen/h3"
+        android:background="@null"
+        android:gravity="center_vertical"
+    />
+
+
+</LinearLayout>

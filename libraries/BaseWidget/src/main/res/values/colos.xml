@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="line_dialog">#101010</color>
+    <color name="bg_content_white">@android:color/white</color><!-- 背景色: 白 -->
+
+</resources>

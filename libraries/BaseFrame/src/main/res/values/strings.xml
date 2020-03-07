@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="duration_anim">300</string>
+
+
+    <string name="llloginsdk_common_cancel">取消</string>
+    <string name="llloginsdk_common_ok">确定</string>
+    <string name="llloginsdk_common_and">和</string>
+    <string name="llloginsdk_common_refresh">刷新</string>
+    <string name="llloginsdk_common_delete">删除</string>
+
+    <string name="llloginsdk_back">返回</string>
+    <string name="llloginsdk_login">登录</string>
+    <string name="llloginsdk_register">注册</string>
+    <string name="llloginsdk_submit">提交</string>
+    <string name="llloginsdk_set_password">设置密码</string>
+    <string name="llloginsdk_reset_password">找回密码</string>
+    <string name="llloginsdk_reset_password_verify">手机验证</string>
+    <string name="llloginsdk_hint_mobile">请输入用户名</string>
+    <string name="llloginsdk_hint_password">请输入密码</string>
+    <string name="llloginsdk_hint_new_password">请输入新密码</string>
+    <string name="llloginsdk_hint_new_password_again">请再次输入新密码</string>
+    <string name="llloginsdk_hint_set_password">请设置密码</string>
+    <string name="llloginsdk_hint_veri_code">请输入6位验证码</string>
+    <string name="llloginsdk_hint_change_password_old">请输入现密码</string>
+    <string name="llloginsdk_hint_change_password_new">请输入新密码</string>
+    <string name="llloginsdk_hint_change_password_confirm">请再输一次新密码</string>
+    <string name="llloginsdk_register_sn">立即注册</string>
+    <string name="llloginsdk_forget_password">忘记密码?</string>
+    <string name="llloginsdk_license">《用户注册协议》</string>
+    <string name="llloginsdk_regulation">《联豆管理办法》</string>
+    <string name="llloginsdk_license_agreement">已同意</string>
+    <string name="llloginsdk_next_step">下一步</string>
+    <string name="llloginsdk_veri_code_not_received">收不到验证码？</string>
+    <string name="llloginsdk_veri_code_sent_format">已向%s发送6位数字验证码短信</string>
+    <string name="llloginsdk_refresh_captcha">看不清楚，换一换</string>
+    <string name="llloginsdk_change_password">修改密码</string>
+
+    <string name="llloginsdk_error_login_password">用户名不存在或密码错误！</string>
+    <string name="llloginsdk_error_account_block">该账号被锁定，请与客服联系！</string>
+
+    <string name="llloginsdk_register_tip0">"亲，请检查一下您输入的手机号"</string>
+    <string name="llloginsdk_register_tip1">"您输入的手机号格式不对，请重新输入！"</string>
+    <string name="llloginsdk_register_tip2">"难怪这位客官如此面善，您已经注册过啦~"</string>
+    <string name="llloginsdk_register_tip2_1">"直接登录"</string>
+    <string name="llloginsdk_register_tip3">"您还没有注册，只需两步直接注册~"</string>
+    <string name="llloginsdk_register_tip3_1">"继续注册"</string>
+    <string name="llloginsdk_reset_password_tip3">"您还没有注册，只需两步直接注册~"</string>
+    <string name="llloginsdk_reset_password_tip3_1">"去注册"</string>
+
+
+    <string name="llloginsdk_vercode_text">"重发验证码"</string>
+    <string name="llloginsdk_vercode_text1">"获取验证码"</string>
+    <string name="llloginsdk_vercode_text2">"%d秒后重发"</string>
+    <string name="llloginsdk_vercode_tip0">"短信验证码发送成功，请注意查收！"</string>
+    <string name="llloginsdk_vercode_tip1">"该手机号已注册过"</string>
+    <string name="llloginsdk_vercode_tip2">"验证码请求过于频繁，请等一分钟之后再试！"</string>
+    <string name="llloginsdk_vercode_tip3">"验证码发送失败！"</string>
+
+    <string name="llloginsdk_success_register">注册成功</string>
+    <string name="llloginsdk_success_reset_password">新密码设置成功</string>
+    <string name="llloginsdk_success_change_password">密码修改成功！</string>
+    <string name="llloginsdk_success_change_password_same">操作成功，您真是个念旧的人~</string>
+    <string name="llloginsdk_error_change_password">密码修改失败</string>
+    <string name="llloginsdk_error_again_password">两次输入的新密码不一致，请确认</string>
+    <string name="llloginsdk_error_old_password">现密码不对，请修改</string>
+    <string name="llloginsdk_modify_pwd_tip">亲，密码过于简单会有安全风险，强烈建议使用6&#8211;16位由数字、字母组成的密码。</string>
+
+
+    <string name="llloginsdk_introduction_password">请输入6&#8211;16位数字、字母组成的密码。\n为了保护你的账号安全，请勿设置过于简单的密码。</string>
+
+    <string name="llloginsdk_toast_socket_timeout_exception">请求超时</string>
+    <string name="llloginsdk_toast_unknown_host_exception">网络不畅请稍后重试</string>
+    <string name="llloginsdk_toast_request_failure">请求失败</string>
+    <string name="llloginsdk_toast_json_exception">JSON解析异常</string>
+    <string name="llloginsdk_toast_http_status_code_format">HTTP状态码%d</string>
+    <string name="llloginsdk_toast_api_status_code_format">API状态码%d</string>
+    <string name="llloginsdk_toast_password_length_invalid">亲，密码过于简单会有安全风险，强烈建议使用6&#8211;16位由数字、字母组成的密码</string>
+    <string name="llloginsdk_toast_login_too_many_fails_format">很抱歉，您的账户因为非法操作已被锁定，解锁请联系客服%s
+    </string>
+    <string name="llloginsdk_toast_permission_call_phone_denied">权限已被拒绝，无法拨打电话</string>
+    <string name="llloginsdk_toast_permission_camera_denied">权限已被拒绝，无法启动相机</string>
+    <string name="llloginsdk_toast_permission_location_denied">权限已被拒绝，无法启动位置服务</string>
+
+    <string name="llloginsdk_loading">加载中&#8230;</string>
+    <string name="llloginsdk_neterror">网络连接错误</string>
+    <string name="llloginsdk_tip">温馨提示</string>
+    <string name="llloginsdk_status_network_failure">亲，您的手机网络飞走了~</string>
+    <string name="llloginsdk_status_404">页面数据出走，小连欲哭无泪~</string>
+    <string name="llloginsdk_status_5xx">服务器打盹中，稍后再来试试吧~</string>
+    <string name="llloginsdk_status_click_to_refresh">@string/llloginsdk_common_refresh</string>
+
+    <string name="llloginsdk_dialog_default_title">请确认操作</string>
+    <string name="llloginsdk_fragment_me_call_customer">确定拨打客服电话%1$s吗?</string>
+    <string name="llloginsdk_customer_service">客服电话</string>
+    <string name="llloginsdk_phone_number">400-682-6863</string>
+    <string name="llloginsdk_anotherplace_logined">"您已在别处登录，如非本人操作请尽快修改密码。"</string>
+
+    <!-- Start Life 2.0 -->
+    <string name="llloginsdk_fragment_login_mobile">账号</string>
+    <string name="llloginsdk_fragment_login_password">密码</string>
+    <!-- End Life 2.0 -->
+</resources>

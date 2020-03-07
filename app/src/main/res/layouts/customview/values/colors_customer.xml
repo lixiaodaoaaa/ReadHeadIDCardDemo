@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="priory_low">#FF3AA539</color>
+    <color name="priory_middle">#FFDB8126</color>
+    <color name="priory_high">#FFFF0000</color>
+    <color name="color_inspect">#FFD8D8D8</color>
+
+</resources>

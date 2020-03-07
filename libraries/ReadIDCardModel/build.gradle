@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion rootProject.BUILD.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.BUILD.minSdkVersion
+        targetSdkVersion rootProject.BUILD.targetSdkVersion
+
+        flavorDimensions "versionCode"
+        versionCode 8
+
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            res.srcDirs =
+                    [
+                            '../app/src/main/res'
+                    ]
+        }
+    }
+
+}
+
+task copyNativeLibs(type: Copy) {
+    from(new File('libs')) { include '**/*.so' }
+    into new File(buildDir, 'native-libs')
+}
+
+tasks.withType(JavaCompile) {
+    javaCompileTask -> javaCompileTask.dependsOn copyNativeLibs; options.encoding = "UTF-8";
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+    api files('libs/OTG.jar')
+
+
+    api 'com.google.guava:guava:20.0'
+    api 'de.greenrobot:eventbus:2.4.0'
+}

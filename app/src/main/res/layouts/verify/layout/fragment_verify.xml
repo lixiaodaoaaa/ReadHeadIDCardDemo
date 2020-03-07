@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/fill_both_vertical"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/bg_content_white"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true"
+>
+
+    <LinearLayout
+        style="@style/fill_both_vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/bg_content_white"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+    >
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:layout_width="0.0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="10"
+                     android:background="@android:color/black"
+                     android:orientation="vertical">
+
+            <cn.face.camera.CameraPreview
+                android:id="@+id/cameraPreView"
+                style="@style/fill_both_size"
+            />
+
+            <com.brc.idauth.ui.view.NewFaceView
+                android:id="@+id/texture_faceview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+        >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible"
+            >
+                <View android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:background="@drawable/bg_verify_header"
+                />
+                <com.jude.easyrecyclerview.EasyRecyclerView
+                    android:id="@+id/recyclerView"
+                    style="@style/fill_both_size"
+                    android:layout_marginTop="70dp"
+                    android:background="@color/bg_content_white"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:scrollbars="none"
+                />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_people_head"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+            />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_verify_result"
+        style="@style/fill_auto_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+    />
+
+
+</RelativeLayout>

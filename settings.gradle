@@ -1,0 +1,15 @@
+include ':app','greendaogenerator'
+include ':BaseFrame'
+include ':MaterialLib'
+include ':BaseNetModel'
+include ':ReadIDCardModel'
+include ':BaseWidget'
+include ':FaceVerifyModel'
+
+project(':BaseFrame').projectDir = new File('libraries/BaseFrame')
+project(':MaterialLib').projectDir = new File('libraries/MaterialLib')
+project(':BaseWidget').projectDir = new File('libraries/BaseWidget')
+project(':BaseNetModel').projectDir = new File('libraries/BaseNetModel')
+project(':FaceVerifyModel').projectDir = new File('libraries/FaceVerifyModel')
+project(':ReadIDCardModel').projectDir = new File('libraries/ReadIDCardModel')
+//project(':picModel').projectDir = new File('libraries/picdblib')

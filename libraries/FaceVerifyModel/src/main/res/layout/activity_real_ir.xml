@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+  <cn.face.localsdkdemo.gpu.GLFrameSurface
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <cn.face.localsdkdemo.view.FaceView
+        android:id="@+id/faceview"
+       
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/ir_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+       
+        android:background="@drawable/cloudwalk_btn_mall_blue"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:text="红外活体检测"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+    <TextView
+    android:id="@+id/faceResult"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:text="活体检测结果"
+    android:layout_gravity="bottom|center_horizontal"
+    android:textColor="#fff"
+    android:textSize="20dp" />
+
+</FrameLayout>

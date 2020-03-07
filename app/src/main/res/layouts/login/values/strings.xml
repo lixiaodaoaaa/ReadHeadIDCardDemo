@@ -1,0 +1,13 @@
+<resources>
+
+
+
+
+
+    <string name="text_password">密&#160;&#160;码:</string>
+
+    <string name="toolbar_title_forget_password">忘记密码</string>
+    <string name="toolbar_title_reset_password">重置密码</string>
+
+
+</resources>

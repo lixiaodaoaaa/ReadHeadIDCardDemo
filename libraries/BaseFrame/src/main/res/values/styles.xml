@@ -1,0 +1,99 @@
+<resources>
+
+    <style name="fill_auto_size">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <!--*********父控件是相对布局  位于相对布局的右下角*************-->
+    <style name="fill_auto_rightBottom" parent="fill_auto_size">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+
+    <!--*********垂直居中  all wrap *************-->
+    <style name="fill_auto_centerVertical" parent="fill_auto_size">
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+    <!--*********方向 水平  垂直居中  自动布局  all wrap *************-->
+    <style name="fill_auto_horizontal_centerVertical" parent="fill_auto_centerVertical">
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--*********方向 水平  自动布局  all wrap *************-->
+    <style name="fill_auto_horizontal" parent="fill_auto_size">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <!--***********************用白色铺满*************************-->
+    <style name="fill_both_with_white" parent="fill_both_size">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+
+    <style name="fill_width_auto">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="fill_width_vertical" parent="fill_width_auto">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="fill_width_vertical_InParentLeftTop" parent="fill_width_vertical">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+
+    <style name="fill_width_vertical_with_white" parent="fill_width_vertical">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="fill_width_horizontal" parent="fill_width_auto">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="fill_width_horizontal_inParentLeftTop" parent="fill_width_horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="fill_width_horizontal_withWhite" parent="fill_width_horizontal">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="fill_height_auto">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="fill_height_autoAllCenter" parent="@style/fill_height_auto">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="fill_both_size">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="fill_both_vertical" parent="fill_both_size">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="fill_both_vertical_with_white" parent="fill_both_vertical">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="fill_both_horizontal" parent="fill_both_size">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+</resources>

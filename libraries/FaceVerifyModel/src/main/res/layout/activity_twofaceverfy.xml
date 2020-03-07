@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#454a5d"
+     >
+
+<ImageButton
+    android:id="@+id/idcard2_btn"
+     android:layout_width="200dp"
+        android:layout_height="132dp"
+    android:layout_below="@+id/idcard1_tip"
+    
+    android:layout_marginTop="59dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/idbcg2"
+    android:scaleType="fitCenter" />
+
+<ImageButton
+    android:id="@+id/idcard1_btn"
+     android:layout_width="200dp"
+        android:layout_height="132dp"
+    
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/idbcg2"
+    android:scaleType="fitCenter" />
+
+<Button
+    android:id="@+id/next_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="20dp"
+   android:background="@drawable/cloudwalk_btn_mall_blue"
+    android:text="图片对比"
+    android:textColor="#ffffff"
+    android:textSize="25sp" />
+
+<TextView
+    android:id="@+id/idcard1_tip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/idcard1_btn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="8dp"
+    android:text="特征提取结果?"
+    android:textColor="#fff" />
+
+<TextView
+    android:id="@+id/idcard2_tip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/idcard2_btn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="8dp"
+    android:text="特征提取结果?"
+    android:textColor="#fff" />
+
+<TextView
+    android:id="@+id/faceResult"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/next_btn"
+    android:layout_alignLeft="@+id/next_btn"
+    android:text=""
+    android:textColor="#fff"
+    android:textSize="20dp" />
+
+</RelativeLayout>

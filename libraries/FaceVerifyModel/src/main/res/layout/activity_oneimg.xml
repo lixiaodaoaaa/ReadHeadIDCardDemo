@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#454a5d"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:gravity="center"
+    android:paddingRight="15dp" >
+
+    <ImageButton
+        android:id="@+id/idcard1_btn"
+        android:layout_width="303dp"
+        android:layout_height="195dp"
+       
+        android:background="@drawable/idbcg1"
+        android:scaleType="centerCrop" />
+
+    
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/idcard1_btn"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="10dp"
+         android:text="识别结果:"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="@android:color/white" />
+
+     <TextView
+         android:id="@+id/result_tv"
+         android:layout_width="303dp"
+         android:layout_height="195dp"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/textView1"
+         android:background="#f0f0f3"
+         android:textSize="16sp"
+         android:textColor="#000"
+         android:scaleType="centerCrop" />
+
+</RelativeLayout>

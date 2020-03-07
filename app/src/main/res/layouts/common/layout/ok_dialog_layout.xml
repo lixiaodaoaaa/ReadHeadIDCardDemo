@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/bg_content_white"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_ok_dialog_conent"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+    >
+
+        <TextView
+            android:id="@+id/confirm_dialog_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/text_please_agree_protocol"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/rl_ok_dialog_conent"
+        android:layout_marginLeft="@dimen/page_margin"
+        android:layout_marginRight="@dimen/page_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dialog_ok"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:background="@null"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="ok"
+            android:layout_gravity="center"
+            android:textColor="@color/font_primary"
+            android:textSize="@dimen/h3"
+        />
+    </LinearLayout>
+</RelativeLayout>

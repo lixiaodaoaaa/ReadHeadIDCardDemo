@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.material.lib.widget.RelativeLayout
+    style="@style/AppTheme.Material.TouchView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+>
+    <TextView
+        android:id="@+id/tv_item"
+        style="@style/fill_width_auto"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/font_title"
+        android:textSize="@dimen/h4"
+    />
+
+</com.android.material.lib.widget.RelativeLayout>

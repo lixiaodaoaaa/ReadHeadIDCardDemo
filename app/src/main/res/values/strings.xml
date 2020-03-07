@@ -1,0 +1,36 @@
+<resources>
+
+
+    <string name="app_name">brc.idauth</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--*************************title start*************************-->
+
+    <string name="title_taskbox">任务箱</string>
+    <string name="tv_login">登录</string>
+    <string name="tv_execute_person">执行人员：</string>
+
+    <!--*************************title end****************************-->
+
+    <!--*************************menu start*************************-->
+    <string name="menu_scan">扫描</string>
+    <string name="menu_sync">同步</string>
+    <string name="menu_back">返回</string>
+    <string name="menu_add">增加</string>
+    <string name="menu_sort">排序</string>
+    <string name="menu_priority">优先级</string>
+    <string name="menu_start_time">开始时间</string>
+    <string name="menu_status">状态</string>
+    <!--*************************menu start*************************-->
+
+
+    <string name="str_error_network">网络出错，请重试</string>
+    <string name="str_error_no_network">请检查网络是否已连接</string>
+    <string name="str_error_network_server">请检查网络配置是否正确</string>
+</resources>

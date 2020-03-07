@@ -1,0 +1,22 @@
+<resources>
+
+    <style name="AppTheme.Material" parent="Material.Drawable.Ripple.Touch.MatchView.Light">
+
+    </style>
+
+    <style name="AppTheme.Material.TouchView">
+        <item name="rd_backgroundColor">#33999999</item>
+        <item name="rd_rippleColor">#33999999</item>
+        <item name="rd_delayClick">afterRelease</item>
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleHover">true</item>
+    </style>
+
+    <style name="AppTheme.Material.CheckBox" parent="Material.Drawable.CheckBox">
+        <item name="cbd_strokeColor">@color/primary</item>
+        <item name="cbd_tickColor">@android:color/white</item>
+        <item name="cbd_boxSize">14dp</item>
+        <item name="cbd_height">18dp</item>
+    </style>
+
+</resources>

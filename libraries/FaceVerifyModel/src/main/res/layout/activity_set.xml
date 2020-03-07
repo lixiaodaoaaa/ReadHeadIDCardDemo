@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="人脸的最小尺寸:" />
+
+    <EditText
+        android:id="@+id/et_small"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_urladdr"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+         android:inputType="numberSigned"
+        android:hint="检测人脸的最小尺寸" >
+      
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="人脸的最大尺寸:" />
+
+      <EditText
+        android:id="@+id/et_big"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_urladdr"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:inputType="numberSigned"
+        android:text="检测人脸的最大尺寸" >
+      
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="授权码:" />
+
+      <EditText
+        android:id="@+id/et_licence"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_urladdr"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:lines="5"
+       
+         >
+      
+    </EditText>
+    
+       <TextView
+           android:id="@+id/tv_licencedate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="授权有效期:" />
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="fill_parent"
+        android:layout_height="47.5dp"
+        android:layout_below="@+id/et_url"
+        android:layout_margin="9dp"
+        
+        android:text="保存"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="网络授权:" />
+
+      <EditText
+        android:id="@+id/et_cus_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_urladdr"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+       android:hint="申请授权时的单位名称"
+       
+         />
+      <EditText
+        android:id="@+id/et_cus_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_urladdr"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:hint="申请授权时的用户名"
+       
+         />
+      
+    <Button
+        android:id="@+id/bt_licence"
+        android:layout_width="fill_parent"
+        android:layout_height="47.5dp"
+        android:layout_below="@+id/et_url"
+        android:layout_margin="9dp"
+        
+        android:text="授权"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

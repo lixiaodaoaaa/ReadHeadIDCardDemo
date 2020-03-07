@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="AppTheme.RootLayout" parent="fill_both_size">
+        <item name="android:background">@color/background</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="AppTheme.TitleText">
+        <item name="android:textColor">@color/font_title</item>
+        <item name="android:textSize">@dimen/h4</item>
+    </style>
+
+
+    <style name="AppTheme.fillWidthHorizontalWithPagePadding" parent="@style/fill_width_horizontal">
+        <item name="android:paddingLeft">@dimen/page_margin</item>
+        <item name="android:paddingRight">@dimen/page_margin</item>
+
+    </style>
+
+
+    <style name="AppTheme.TitleText.fill_auto" parent="AppTheme.TitleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="AppTheme.PrimaryText">
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:textSize">@dimen/h5</item>
+    </style>
+
+    <style name="AppTheme.PrimaryText.FillBothWeight1" parent="AppTheme.PrimaryText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="AppTheme.SubText">
+        <item name="android:textColor">@color/font_sub</item>
+        <item name="android:textSize">@dimen/h6</item>
+    </style>
+
+
+    <style name="AppTheme.SubText.FillAuto" parent="AppTheme.SubText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.Mine"></style>
+
+    <style name="AppTheme.Mine.Panel" parent="AppTheme.Material.TouchView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/mint_panel_height</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="AppTheme.Mine.ItemIcon">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <style name="AppTheme.Mine.ItemTitle" parent="AppTheme.TitleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">60dp</item>
+        <item name="android:layout_marginTop">22dp</item>
+    </style>
+
+    <style name="AppTheme.Mine.ItemTitleSub" parent="AppTheme.SubText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">46dp</item>
+        <item name="android:layout_marginLeft">60dp</item>
+    </style>
+
+
+    <style name="AppTheme.Button" parent="AppTheme.Material.TouchView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:textSize">@dimen/h2</item>
+    </style>
+
+
+    <style name="AppTheme.ProgressBarStyle" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">6dp</item>
+        <item name="android:progressDrawable">@drawable/progressbar_negative_color</item>
+    </style>
+
+    <style name="AppTheme.ProgressBarStyle.WithPagePadding"
+           parent="@style/AppTheme.ProgressBarStyle">
+        <item name="android:paddingLeft">@dimen/page_margin</item>
+        <item name="android:paddingRight">@dimen/page_margin</item>
+    </style>
+
+    <style name="AppTheme.SmallButton" parent="AppTheme.Material.TouchView">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textSize">@dimen/h2</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="AppTheme.SmallButton.Wireframe">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:background">@drawable/button_oval_selector</item>
+    </style>
+
+
+    <style name="AppTheme.Button.Solid">
+        <item name="android:textColor">@color/font_white</item>
+        <item name="android:background">@drawable/button_solid_selector</item>
+        <item name="android:layout_height">68dp</item>
+        <item name="android:textSize">@dimen/h3</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="AppTheme.TipText" parent="AppTheme.TitleText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@color/color_recycler_header_title</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/page_margin</item>
+    </style>
+
+    <style name="AppTheme.TipTextFillAuto" parent="AppTheme.TipText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="AppTheme.FillWidthAuto.WithPagePadding" parent="@style/fill_width_auto">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="loadingDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="OkDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

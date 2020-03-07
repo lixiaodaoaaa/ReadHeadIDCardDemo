@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- **********主要颜色********** -->
+    <!-- 主色 -->
+    <color name="primary">#FFFF6347</color>
+    <!-- 主色渐变色 -->
+    <color name="primary_shade">#5ab4ff</color>
+    <!-- 辅助色 -->
+    <color name="sub_color">#ffb400</color>
+    <!-- 点缀色 -->
+    <color name="embellishment">#ff6464</color>
+
+    <!-- **********文字颜色********** -->
+    <!-- 标题颜色 -->
+    <color name="font_title">#333333</color>
+    <!-- 主要文字 -->
+    <color name="font_primary">#676767</color>
+    <!-- 辅助文字 -->
+    <color name="font_sub">#989898</color>
+    <!-- 点击文字 -->
+    <color name="font_click">#ffa000</color>
+    <!-- 提示文字 -->
+    <color name="font_remind">#ff5050</color>
+    <!--已完成-->
+    <color name="font_green">#ff04DE2E</color>
+    <color name="font_white">#FFFFFFFF</color>
+
+    <!-- 线框颜色 -->
+    <color name="wireframe">#ffD3D3D3</color>
+    <!-- 背景颜色 -->
+    <color name="background">#ffecedee</color>
+    <!-- 输入框背景色 -->
+    <color name="background_input">#f8f9fa</color>
+    <!-- 遮盖层颜色 -->
+    <color name="cover_color">#99000000</color>
+
+    <color name="separator_color">#ff999999</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="btn_wireframe">#FFDDDFDF</color>
+    <color name="btn_ok">#FF81D135</color>
+
+
+    <color name="start_gradient_color">#FFFB853C</color>
+    <color name="end_gradient_color">#FFF6324D</color>
+    <color name="black">#FF000000</color>
+
+    <color name="blue_title">#FF2FA0FF</color>
+    <color name="hint_color">#ff777777</color>
+</resources>

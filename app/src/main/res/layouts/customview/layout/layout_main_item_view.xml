@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/fill_both_size"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_gravity="center"
+              android:background="@color/transparent"
+              android:descendantFocusability="afterDescendants"
+              android:gravity="center"
+              android:orientation="horizontal"
+>
+
+
+    <LinearLayout
+        android:id="@+id/ll_main_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+
+    >
+        <TextView
+            android:id="@+id/tv_main_item_chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_horizontal"
+            android:gravity="left"
+            android:text="问题1问题1问题1问题1问题1问题1问题1问题1"
+
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/h3"
+        />
+        <TextView
+            android:id="@+id/tv_main_item_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_horizontal"
+            android:layout_marginTop="6dp"
+            android:gravity="left"
+            android:text="你爸爸的名字叫什么"
+            android:textColor="@color/font_white"
+            android:textSize="@dimen/h2"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_main_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/item_padding_top"
+        android:src="@drawable/ic_main_verify"
+    />
+
+</LinearLayout>

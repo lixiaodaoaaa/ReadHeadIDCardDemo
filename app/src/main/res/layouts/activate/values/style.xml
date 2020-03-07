@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="AppTheme.DeviceActivate" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 隐藏标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="AppTheme.Input" parent="fill_width_auto">
+        <item name="android:layout_gravity">top|left</item>
+        <item name="android:layout_marginTop">@dimen/item_padding_top</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:textSize">@dimen/h3</item>
+        <item name="android:textColor">@color/font_white</item>
+        <item name="android:textColorHint">@color/font_hint</item>
+    </style>
+</resources>

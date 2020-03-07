@@ -1,0 +1,45 @@
+<resources>
+
+
+    <declare-styleable name="TitleValueDividerView">
+        <attr name="titleSize" format="integer"/>
+        <attr name="valueSize" format="integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="OkNotokLayout">
+        <attr name="okChecked" format="boolean"/>
+        <attr name="notOkChecked" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="HandoverSopLayout">
+        <attr name="itemTitle" format="reference|string"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundCornerWithBgTv">
+        <attr name="type" format="integer">
+            <enum name="level_low" value="0"/>
+            <enum name="level_middle" value="1"/>
+            <enum name="level_high" value="2"/>
+            <enum name="level_inspect" value="3"/>
+        </attr>
+        <attr name="corner" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="InputBgEditText">
+        <attr name="bordColor" format="color"/>
+        <attr name="bordTextSize" format="integer"/>
+        <attr name="borderLineWidth" format="integer"/>
+        <attr name="hintText" format="string"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="MainItemView">
+        <attr name="textChinese" format="string"/>
+        <attr name="textEnglish" format="string"/>
+        <attr name="rightIconId" format="reference"/>
+    </declare-styleable>
+
+</resources>

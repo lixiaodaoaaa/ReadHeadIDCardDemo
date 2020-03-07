@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="3dp"/>
+            <solid android:color="@color/bg_content_gray"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="3dp"/>
+            <solid android:color="@color/transparent"/>
+        </shape>
+    </item>
+
+    <!--
+    之前用两张图片实现。现在改用 背景透明的方式实现，用来减少apk的体积
+    参考:http://www.cnblogs.com/tianzhijiexian/p/4505190.html
+    建议以后所有的drawable 能用此方法实现，都用此方法实现
+    <item android:drawable="@drawable/iv_backlocation_focus" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/iv_backlocation_normal" android:state_pressed="false"></item>
+    -->
+
+</selector>

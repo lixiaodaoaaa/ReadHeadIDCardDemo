@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="@style/fill_width_auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+    <com.brc.idauth.ui.view.TitleValueDividerView
+        android:id="@+id/idCardItemLayout"
+        style="@style/fill_width_auto"
+    />
+
+</RelativeLayout>

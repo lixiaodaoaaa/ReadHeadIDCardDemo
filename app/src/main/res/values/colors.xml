@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFF85B44</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="color_recycler_header_title">#FFEBEBEB</color>
+
+    <color name="color_drawer_gradient_start">#FFFE942C</color>
+    <color name="color_drawer_gradient_middle">#FFFD7535</color>
+    <color name="color_drawer_gradient_end">#FFFB573D</color>
+
+
+    <color name="color_button">#ff3399ff</color>
+
+    <color name="font_hint">#FF999999</color>
+    <color name="color_blue">#FF4674C1</color>
+    <color name="color_red">#FFFC0E1C</color>
+    <color name="color_gray">#FF989898</color>
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="head_txt_color">#333333</color>
+
+
+
+
+    <!--积极正向的进度条-->
+    <color name="progress_positive_color">@color/primary</color>
+    <!--反向的进度条-->
+    <color name="progress_negative_color">#bbbbbb</color>
+    <!--未完的进度条-->
+    <color name="progress_gray_color">#f0f0f0</color>
+
+</resources>

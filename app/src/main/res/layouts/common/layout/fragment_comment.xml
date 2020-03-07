@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/fill_both_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+>
+
+
+    <EditText
+        android:id="@+id/et_comment"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@android:color/white"
+        android:gravity="top"
+        android:hint="@string/hint_comment"
+        android:minLines="3"
+        android:paddingTop="18dp"
+        android:layout_marginLeft="@dimen/page_margin"
+        android:layout_marginRight="@dimen/page_margin"
+        android:paddingLeft="@dimen/page_margin"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/font_title"
+        android:textColorHint="@color/font_sub"
+        android:textSize="@dimen/h4"
+    />
+
+</LinearLayout>

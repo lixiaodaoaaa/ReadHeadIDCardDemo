@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common_bg">#2c404e</color>
+     <color name="common_bg_click">#602c404e</color>
+     <color name="line">#e8e8e8</color>
+     
+      <drawable name="main_bt">#2c404e</drawable>
+     <drawable name="main_bt1">#602c404e</drawable>
+  
+</resources>

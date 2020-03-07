@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_ok_notok_layout"
+    style="@style/fill_width_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/item_padding_top"
+>
+    <RadioGroup
+        android:id="@+id/radio_group_ok_notok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+    >
+        <RadioButton
+            android:id="@+id/btn_ok"
+            android:layout_width="0.0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_ok_selector"
+            android:checked="true"
+            android:text="@string/text_ok"
+            android:textColor="@color/text_gray"
+            android:button="@null"
+            android:gravity="center"
+        />
+
+        <RadioButton
+            android:id="@+id/btn_not_ok"
+            android:layout_width="0.0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/page_margin"
+            android:layout_weight="1"
+            android:background="@drawable/button_notok_selector"
+            android:checked="false"
+            android:text="@string/text_not_ok"
+            android:textColor="@color/text_gray"
+            android:textOff="@string/text_not_ok"
+            android:textOn="@string/text_not_ok"
+            android:button="@null"
+            android:gravity="center"
+        />
+
+    </RadioGroup>
+
+</LinearLayout>
+

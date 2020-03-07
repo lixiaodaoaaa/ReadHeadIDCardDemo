@@ -1,0 +1,78 @@
+// Define versions in a single place
+ext {
+    // Sdk and tools
+    minSdkVersion = 21
+    targetSdkVersion = 26
+    compileSdkVersion = 26
+    buildToolsVersion = '28.0.3'
+    retrofit2Version = '2.1.0'
+
+    // android build version
+    PROJECT_BUILD = [
+            compileSdkVersion: 26,
+            buildToolsVersion: '28.0.3',
+            minSdkVersion    : 21,
+            targetSdkVersion : 22
+    ]
+
+    BUILD = PROJECT_BUILD
+
+    supportVersion = "27.1.0"
+
+
+    supportPackage = 'com.android.support'
+
+    // support dependencies
+    supportDependencies = [
+            // v4
+            v4               : buildDependency(supportPackage, 'support-v4', supportVersion),
+
+            //v7
+            appcompat        : buildDependency(supportPackage, 'appcompat-v7', supportVersion),
+            cardview         : buildDependency(supportPackage, 'cardview-v7', supportVersion),
+            gridlayout       : buildDependency(supportPackage, 'gridlayout-v7', supportVersion),
+            mediarouter      : buildDependency(supportPackage, 'mediarouter-v7', supportVersion),
+            palette          : buildDependency(supportPackage, 'palette-v7', supportVersion),
+            recyclerview     : buildDependency(supportPackage, 'recyclerview-v7', supportVersion),
+            preference       : buildDependency(supportPackage, 'preference-v7', supportVersion),
+            cardView         : buildDependency(supportPackage, 'cardview-v7', supportVersion),
+
+            design           : buildDependency(supportPackage, 'design', supportVersion),
+            customtabs       : buildDependency(supportPackage, 'customtabs', supportVersion),
+            percent          : buildDependency(supportPackage, 'percent', supportVersion),
+            recommendation   : buildDependency(supportPackage, 'recommendation', supportVersion),
+            supportAnnotation: buildDependency(supportPackage, 'support-annotations', supportVersion),
+            v13              : buildDependency(supportPackage, 'support-v13', supportVersion),
+            multidex         : buildDependency(supportPackage, 'multidex', '1.0.0')
+    ]
+
+
+
+    rxJava = 'io.reactivex:rxjava:1.1.9'
+    rxAndroid = 'io.reactivex:rxandroid:1.2.1'
+    rxbinding = 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    eventbus = 'de.greenrobot:eventbus:2.4.0'
+    gson = 'com.google.code.gson:gson:2.7'
+
+    supportV4Support = buildSupportDependency("support-v4", supportVersion)
+    supportPercent = buildSupportDependency("percent", supportVersion)
+    supportDesign = buildSupportDependency("design", supportVersion)
+    supportAppcompatV7 = buildSupportDependency("appcompat-v7", supportVersion)
+    supportCardViewV7 = buildSupportDependency("cardview-v7", supportVersion)
+    supportRecyclerViewV7 = buildSupportDependency("recyclerview-v7", supportVersion)
+    supportAnnotations = buildSupportDependency("support-annotations", supportVersion)
+
+}
+
+
+String buildSupportDependency(String supportDetail, String version) {
+    String strSupport = "com.android.support"
+    return buildDependency(strSupport, supportDetail, version)
+}
+
+
+String buildDependency(String packName, String packDetail, String version) {
+    return "${packName}:${packDetail}:${version}"
+}
+
+

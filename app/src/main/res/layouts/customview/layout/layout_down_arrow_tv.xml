@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/fill_width_with_padding"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_gravity="center"
+                android:descendantFocusability="afterDescendants"
+                android:gravity="center"
+                xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/tv_select_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/page_margin"
+        android:layout_marginRight="@dimen/page_margin"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:enabled="true"
+        android:gravity="center"
+        android:paddingRight="@dimen/page_margin"
+        android:textColor="@color/font_sub"
+        android:textSize="@dimen/h3"
+    />
+
+
+    <ImageView
+        android:id="@+id/iv_down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/page_margin"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_down"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        tools:visibility="visible"
+    />
+
+
+</RelativeLayout>

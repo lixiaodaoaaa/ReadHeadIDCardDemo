@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/fill_both_with_white"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/page_margin"
+              android:layout_marginRight="@dimen/page_margin"
+              android:descendantFocusability="afterDescendants"
+              android:gravity="center"
+              android:orientation="vertical"
+>
+
+
+    <TextView
+        android:id="@+id/tv_task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:drawablePadding="5dp"
+        android:text="1.  检查点"
+        android:textColor="@color/font_title"
+        android:visibility="visible"
+        tools:text="1.  检查点"
+    />
+
+    <com.digops.ui.view.DownArrowTextView
+        android:id="@+id/layout_select_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_select_text_selector"
+        android:enabled="true"
+        android:gravity="center"
+        android:paddingRight="20dp"
+    />
+
+    <RelativeLayout
+        android:id="@+id/rl_temp_task_photo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:background="@drawable/shape_select_text_selector"
+    >
+        <ImageView
+            android:id="@+id/ic_common_task_photo"
+            style="@style/fill_auto_size"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_photo_camera"
+        />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_temp_task_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:background="@drawable/shape_select_text_selector"
+        android:enabled="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/page_margin"
+        android:paddingRight="20dp"
+        android:textColor="@color/font_sub"
+        android:ellipsize="end"
+        android:textSize="@dimen/h3"
+        android:visibility="gone"
+        tools:visibility="visible"
+    />
+
+</LinearLayout>

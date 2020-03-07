@@ -1,0 +1,13 @@
+<resources>
+
+
+    <!--*************************RounderText start*************************-->
+    <string name="rounder_tv_level_high">优先级高</string>
+    <string name="rounder_tv_level_middle">优先级普通</string>
+    <string name="rounder_tv_level_low">优先级普通</string>
+    <!--*************************RounderText end****************************-->
+
+    <string name="text_protocol"><u>同意服务条款协议声明</u>></string>
+
+
+</resources>

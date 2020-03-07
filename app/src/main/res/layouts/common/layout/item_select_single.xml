@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    style="@style/fill_width_with_padding"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/tv_item"
+    android:layout_height="40dp"
+    android:layout_centerInParent="true"
+    android:textColor="@android:color/holo_red_dark"
+    android:textSize="@dimen/h1"
+
+>
+</TextView>

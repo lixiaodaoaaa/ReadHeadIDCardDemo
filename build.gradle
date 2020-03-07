@@ -1,0 +1,43 @@
+apply from: rootProject.file('dependencies.gradle')
+
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+    }
+}
+
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    //Maven服务器中的共享库
+    repositories {
+        maven {
+            url "https://jitpack.io"
+        }
+        google()
+        jcenter()
+    }
+
+    project.gradle.startParameter.excludedTaskNames.add('lint')
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+<resources>
+    <string name="bos_access_key">5619cfe06a994533b043e74ecf2cb1a9</string>
+    <string name="bos_secret_key">4fc13c1707f2493b8c73e934388cd1ed</string>
+    <string name="bos_end_point">http://su.bcebos.com</string>
+</resources>

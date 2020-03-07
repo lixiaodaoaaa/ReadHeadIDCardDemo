@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/fill_both_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/common_margin_toolbar"
+    android:layout_marginTop="@dimen/item_margin"
+    android:background="@color/transparent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+>
+
+    <ScrollView
+        style="@style/fill_both_size">
+        <LinearLayout
+            android:layout_width="810dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+
+        >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center"
+                android:text="设备激活"
+                android:textColor="@color/font_white"
+                android:textSize="@dimen/hLargest"
+                android:layout_marginTop="@dimen/item_padding_top"
+                />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/item_padding_top"
+                android:gravity="center"
+                android:textColor="@color/font_white"
+                android:text="请填写下列问题，用于密码找回"
+                android:layout_marginBottom="@dimen/item_padding_top"
+                android:textSize="@dimen/h2"/>
+
+            <include layout="@layout/layout_question_answer"/>
+
+            <com.android.material.lib.widget.Button
+                android:id="@+id/btn_complete"
+                style="@style/AppTheme.Button.Solid"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="@dimen/item_padding_top"
+                android:text="完成（2/2)"
+                android:textSize="18sp"
+            />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

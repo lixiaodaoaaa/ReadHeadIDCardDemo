@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api rootProject.ext.gson
+    implementation supportAppcompatV7
+    implementation supportV4Support
+    implementation supportDesign
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation supportAnnotations
+    implementation 'com.jude:easyrecyclerview:4.4.2'
+    implementation 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+
+
+    //api project(':BaseNetModel')
+
+
+
+    api 'com.google.guava:guava:20.0'
+    api 'de.greenrobot:eventbus:2.4.0'
+
+
+
+}

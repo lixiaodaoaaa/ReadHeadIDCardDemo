@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000">
+
+    <LinearLayout
+        style="@style/fill_width_vertical"
+        android:layout_margin="12dp"
+        android:background="@drawable/common_dialog_background">
+
+        <TextView
+            android:id="@+id/common_dialog_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:lines="1"
+            android:textColor="@color/font_title"
+            android:textSize="@dimen/h2"
+            tools:text="标题文字" />
+
+        <TextView
+            android:id="@+id/common_dialog_message_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fadeScrollbars="false"
+            android:lineSpacingExtra="@dimen/line_spacing"
+            android:maxLines="12"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="2dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+            android:scrollbarTrackVertical="@drawable/scrollbar_track"
+            android:scrollbars="vertical"
+            android:textColor="@color/font_title"
+            android:textSize="@dimen/h4"
+            tools:text="为了测试文字 这里是\r\n第二行文字\r\n第三行" />
+
+
+        <com.android.material.lib.widget.CheckBox
+            android:id="@+id/common_dialog_ck"
+            style="@style/AppTheme.Material.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:checked="false"
+            android:gravity="center"
+            android:text="忽略此版本"
+            android:textColor="@color/font_title"
+            android:textSize="@dimen/h2"
+            tools:visibility="visible" />
+
+
+        <ProgressBar
+            android:id="@+id/download_pb"
+            style="@style/AppTheme.ProgressBarStyle.WithPagePadding"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            tools:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/wireframe" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:minHeight="43dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/common_dialog_negative_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:textColor="@color/font_primary"
+                android:textSize="@dimen/h2"
+                tools:text="取消" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/wireframe" />
+
+            <Button
+                android:id="@+id/common_dialog_positive_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/h2"
+                tools:text="确定" />
+
+            <Button
+                android:id="@+id/back_downloadBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="后台下载"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/h2"
+                android:visibility="gone"
+                tools:text="后台下载"
+                tools:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 按钮原始大小19dp -->
+    <ImageView
+        android:id="@+id/common_dialog_close_iv"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_dialog_close" />
+</RelativeLayout>

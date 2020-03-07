@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LLLoginSDK.PasswordLayout">
+        <attr name="hint" format="string"/>
+        <attr name="showPassword" format="boolean"/>
+        <attr name="lockIcon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="LLLoginSDK.RequestStatusLayout">
+        <attr name="normalLayout" format="reference"/>
+        <attr name="showBack" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="LLLoginSDK.ShowHidePasswordEditText">
+        <attr name="drawable_hide" format="integer"/>
+        <attr name="drawable_show" format="integer"/>
+        <attr name="monospace" format="boolean"/>
+    </declare-styleable>
+</resources>

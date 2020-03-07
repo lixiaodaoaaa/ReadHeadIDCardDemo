@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/common_bg"
+    android:layout_height="59dp">
+
+  <ImageView
+      android:id="@+id/actionbar_left_btn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+     
+      
+      android:scaleType="center"
+      android:clickable="true"
+      android:layout_gravity="center_vertical|left"/>
+
+  <TextView
+      android:id="@+id/actionbar_title"
+      android:clickable="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center_horizontal"
+      android:textSize="20sp"
+      android:textColor="@android:color/white"
+      android:text="云从商用SDKDemo"
+      />
+
+  <ImageView
+      android:id="@+id/actionbar_right_btn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:src="@drawable/btn_setup_n"
+    android:visibility="invisible"
+      android:layout_gravity="center_vertical|right"
+      ></ImageView>
+
+ 
+</FrameLayout>

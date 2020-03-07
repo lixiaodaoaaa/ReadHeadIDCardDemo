@@ -15,10 +15,45 @@
 
 ![](https://raw.githubusercontent.com/lixiaodaoaaa/publicSharePic/master/%E8%AF%BB%E5%8F%96%E8%BA%AB%E4%BB%BD%E8%AF%81-1.png)
 
+## 项目结构
+![](https://raw.githubusercontent.com/lixiaodaoaaa/publicSharePic/master/project_info.png)
+
+###  读取身份证照片和身份证信息代码
+ module ReadIDCardModel
+
+```
+     int ret = hsOtgApi.Unpack(filepath, icCardInfo.getwltdata());// 照片解码
+     if (ret != 0) {
+         Log.i(TAG, "unzip  success");
+     }
+ ```
+读取到的身份证照片存放在filePath路径里，请在此路径拿到照片，读取照片信息代码
+```
+    private Bitmap unZipHeadPic(HSIDCardInfo icCardInfo) {
+        Bitmap bmp = null;
+        int ret = hsOtgApi.Unpack(filepath, icCardInfo.getwltdata());// 照片解码
+        if (ret != 0) {
+            return bmp;
+        }
+
+        try {
+            FileInputStream fis = new FileInputStream(filepath + "/zp.bmp");
+            bmp = BitmapFactory.decodeStream(fis);
+            fis.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return bmp;
+    }
+```
+
 ## 开发事项
 ### ReadIDCardModel 读取照片崩溃
 #### 解决方法：
  libwltdecode.so 目录文件夹为armeabi.更改为 armeabi-v7a
  更改原因：与FaceVerifyModel很多so包不能copy到apk中实现打包直接导致崩溃。
+
+
 
 

@@ -10,11 +10,7 @@
 
 ### 项目演示
 
-<video id="video" controls="" preload="none" poster="http://media.w3.org/2010/05/sintel/poster.png">
-      <source id="mov" src="https://share-video.bj.bcebos.com/人脸识别与身份证读取.mov" type="video/mp4">
-      <p>ship</p>
-    </video>
-
+[https://share-video.bj.bcebos.com/人脸识别与身份证读取.mov](https://share-video.bj.bcebos.com/人脸识别与身份证读取.mov)
 
 ## 开发事项
 ### ReadIDCardModel 读取照片崩溃

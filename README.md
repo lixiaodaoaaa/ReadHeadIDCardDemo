@@ -18,17 +18,18 @@
 ## 项目结构
 ![](https://raw.githubusercontent.com/lixiaodaoaaa/publicSharePic/master/project_info.png)
 
-###  读取身份证照片和身份证信息代码
- module ReadIDCardModel
+###  读取身份证照片和身份证信息代码 IDCardSDK.java
+ module ReadIDCardModel 的IDCardSDK
 
-```
+#### 关于 IDCardSDK.java类关键部分解释：
+```java
      int ret = hsOtgApi.Unpack(filepath, icCardInfo.getwltdata());// 照片解码
      if (ret != 0) {
          Log.i(TAG, "unzip  success");
      }
  ```
 读取到的身份证照片存放在filePath路径里，请在此路径拿到照片，读取照片信息代码
-```
+```java
     private Bitmap unZipHeadPic(HSIDCardInfo icCardInfo) {
         Bitmap bmp = null;
         int ret = hsOtgApi.Unpack(filepath, icCardInfo.getwltdata());// 照片解码

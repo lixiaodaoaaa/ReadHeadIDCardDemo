@@ -54,6 +54,12 @@
 #### 解决方法：
  libwltdecode.so 目录文件夹为armeabi.更改为 armeabi-v7a
  更改原因：与FaceVerifyModel很多so包不能copy到apk中实现打包直接导致崩溃。
+---
+ ###  友情赞助
+ ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+👍👍感觉此项目对你有用，可以打赏博主少许银两，支持我努力创作！
+---
+![](https://raw.githubusercontent.com/lixiaodaoaaa/publicSharePic/master/20160606152914990.png)
 
 
 
